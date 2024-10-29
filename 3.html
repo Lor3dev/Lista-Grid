@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "left center right"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+      width: 80%;
+      max-width: 600px;
+    }
+    .header { grid-area: header; background: #ffd966; }
+    .left { grid-area: left; background: #e06666; }
+    .center { grid-area: center; background: #ffd966; }
+    .right { grid-area: right; background: #e06666; }
+    .footer { grid-area: footer; background: #ffd966; }
+    div {
+      padding: 100px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">1</div>
+    <div class="left">2</div>
+    <div class="center">3</div>
+    <div class="right">4</div>
+    <div class="left">5</div>
+    <div class="right">6</div>
+    <div class="footer">7</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Notícias</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+ 
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+    
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+      
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .main-content p {
+            margin: 15px 0;
+            color: #666;
+        }
+
+       
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            color: #007BFF;
+        }
+
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <a href="#">Início</a>
+        <a href="#">Notícias</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Contato</a>
+    </div>
+
+
+    <div class="container">
+        
+   
+        <div class="main-content">
+            <h1>Últimas Notícias em Tecnologia</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo nec eros luctus cursus. Praesent sed nibh euismod, dictum magna nec, commodo ipsum.</p>
+            <p>Suspendisse potenti. Sed in bibendum erat, non sodales justo. Vestibulum sollicitudin mi at mauris gravida, nec lacinia ligula faucibus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo nec eros luctus cursus. Praesent sed nibh euismod, dictum magna nec, commodo ipsum.</p>
+            <p>Suspendisse potenti. Sed in bibendum erat, non sodales justo. Vestibulum sollicitudin mi at mauris gravida, nec lacinia ligula faucibus.</p>
+        </div>
+
+   
+        <div class="sidebar">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#">Inovações</a></li>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Empresas</a></li>
+                <li><a href="#">Inteligência Artificial</a></li>
+                <li><a href="#">Segurança Cibernética</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2024 Site de Notícias. Todos os direitos reservados.</p>
+    </div>
+
+</body>
+</html>
